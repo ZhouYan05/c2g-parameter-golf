@@ -1,0 +1,28 @@
+[14:59:28] TASK tag=recur seed=1337 opt=adamw depth_share=2 tie=0
+[14:59:28] tokenizer=C:\Users\35586\AppData\Local\Temp\c2g_6c4711c0_fineweb_1024_bpe.model
+[14:59:28] data train_shard=fineweb_train_000000.bin val_tokens_available=62021633 val_eval_tokens=294913
+[14:59:28] anchor uniform_over_vocab bpb=4.093601 tokens_per_byte=0.409360 tokens=294912
+[14:59:28] model params=3737872 effective_depth=5
+[14:59:31] optimizers=['adamw'] lr=0.003 muon_lr=0.02
+[14:59:32] step 0 loss 6.9858 lr 7.500e-05 elapsed 0.0s tok 3072
+[14:59:33] step 1 loss 6.9318 lr 1.500e-04 elapsed 1.3s tok 6144
+[15:00:06] step 25 loss 6.0731 lr 1.950e-03 elapsed 33.9s tok 79872
+[15:00:40] step 50 loss 5.8186 lr 2.995e-03 elapsed 67.3s tok 156672
+[15:01:17] step 75 loss 5.4850 lr 2.938e-03 elapsed 104.4s tok 233472
+[15:01:52] step 100 loss 5.2228 lr 2.819e-03 elapsed 140.4s tok 310272
+[15:02:32] step 125 loss 5.2489 lr 2.645e-03 elapsed 179.2s tok 387072
+[15:03:14] step 150 loss 5.1520 lr 2.424e-03 elapsed 221.2s tok 463872
+[15:03:53] step 175 loss 5.1584 lr 2.167e-03 elapsed 260.4s tok 540672
+[15:04:33] step 200 loss 4.8894 lr 1.884e-03 elapsed 300.5s tok 617472
+[15:05:12] step 225 loss 4.8891 lr 1.591e-03 elapsed 339.3s tok 694272
+[15:05:49] step 250 loss 4.7862 lr 1.301e-03 elapsed 376.9s tok 771072
+[15:06:28] step 275 loss 4.9287 lr 1.027e-03 elapsed 415.6s tok 847872
+[15:07:07] step 300 loss 4.7712 lr 7.822e-04 elapsed 455.0s tok 924672
+[15:07:46] step 325 loss 4.6972 lr 5.790e-04 elapsed 493.8s tok 1001472
+[15:08:24] step 350 loss 4.6165 lr 4.265e-04 elapsed 531.5s tok 1078272
+[15:09:02] step 375 loss 4.6009 lr 3.320e-04 elapsed 569.8s tok 1155072
+[15:12:42] train done steps=400 tokens=1228800 wall=791.2s s/step=1.978 tail_loss=4.6301
+[15:15:58] final val_loss=4.6443 val_bpb=2.7428 tokens_per_byte=0.409360 eval_tokens=294912
+[15:16:00] int8+zlib artifact bytes=3526459 raw=3784401 file=recur_seed1337.int8.pt under_16MB=True
+[15:19:01] final_int8_zlib_roundtrip val_loss=4.6443 val_bpb=2.7428
+[15:19:01] RESULT {"tag": "recur", "seed": 1337, "opt": "adamw", "tie": false, "depth_share": 2, "dim": 256, "layers": 4, "heads": 4, "effective_depth": 5, "seq": 256, "batch": 12, "steps": 400, "tokens_seen": 1228800, "wall_seconds": 791.2, "seconds_per_step": 1.978, "train_tail_loss": 4.6301, "n_params": 3737872, "lr": 0.003, "muon_lr": null, "val_loss": 4.6443, "val_bpb": 2.74282, "tokens_per_byte": 0.40936, "eval_tokens": 294912, "artifact_bytes_zlib_int8": 3526459, "artifact_bytes_raw": 3784401, "artifact_under_16mb": true, "int8_val_loss": 4.6443, "int8_val_bpb": 2.742818, "quant_bpb_delta": -2e-06, "anchor_bpb_uniform": 4.093601, "anchor_tokens_per_byte": 0.40936, "threads": 4, "torch": "2.14.1+cpu", "device": "cpu"}
