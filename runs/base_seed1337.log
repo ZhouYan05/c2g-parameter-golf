@@ -1,0 +1,28 @@
+[14:51:08] TASK tag=base seed=1337 opt=adamw depth_share=1 tie=0
+[14:51:08] tokenizer=C:\Users\35586\AppData\Local\Temp\c2g_6c4711c0_fineweb_1024_bpe.model
+[14:51:08] data train_shard=fineweb_train_000000.bin val_tokens_available=62021633 val_eval_tokens=294913
+[14:51:08] anchor uniform_over_vocab bpb=4.093601 tokens_per_byte=0.409360 tokens=294912
+[14:51:08] model params=3737872 effective_depth=4
+[14:51:09] optimizers=['adamw'] lr=0.003 muon_lr=0.02
+[14:51:10] step 0 loss 6.9797 lr 7.500e-05 elapsed 0.0s tok 3072
+[14:51:11] step 1 loss 6.9362 lr 1.500e-04 elapsed 1.0s tok 6144
+[14:51:34] step 25 loss 6.0198 lr 1.950e-03 elapsed 24.0s tok 79872
+[14:51:58] step 50 loss 5.6591 lr 2.995e-03 elapsed 47.4s tok 156672
+[14:52:21] step 75 loss 5.1262 lr 2.938e-03 elapsed 71.1s tok 233472
+[14:52:47] step 100 loss 4.7249 lr 2.819e-03 elapsed 96.2s tok 310272
+[14:53:30] step 125 loss 4.7867 lr 2.645e-03 elapsed 135.0s tok 387072
+[14:53:55] step 150 loss 4.6503 lr 2.424e-03 elapsed 164.6s tok 463872
+[14:54:20] step 175 loss 4.6281 lr 2.167e-03 elapsed 189.2s tok 540672
+[14:54:44] step 200 loss 4.4016 lr 1.884e-03 elapsed 214.0s tok 617472
+[14:55:09] step 225 loss 4.3690 lr 1.591e-03 elapsed 238.8s tok 694272
+[14:55:35] step 250 loss 4.3002 lr 1.301e-03 elapsed 264.2s tok 771072
+[14:56:00] step 275 loss 4.4718 lr 1.027e-03 elapsed 289.6s tok 847872
+[14:56:27] step 300 loss 4.2498 lr 7.822e-04 elapsed 316.8s tok 924672
+[14:56:54] step 325 loss 4.2819 lr 5.790e-04 elapsed 343.7s tok 1001472
+[14:57:21] step 350 loss 4.1905 lr 4.265e-04 elapsed 370.9s tok 1078272
+[14:57:49] step 375 loss 4.1057 lr 3.320e-04 elapsed 398.3s tok 1155072
+[14:58:16] train done steps=400 tokens=1228800 wall=426.4s s/step=1.066 tail_loss=4.2076
+[14:58:49] final val_loss=4.2082 val_bpb=2.4853 tokens_per_byte=0.409360 eval_tokens=294912
+[14:58:49] int8+zlib artifact bytes=3522756 raw=3784401 file=base_seed1337.int8.pt under_16MB=True
+[14:59:22] final_int8_zlib_roundtrip val_loss=4.2083 val_bpb=2.4854
+[14:59:22] RESULT {"tag": "base", "seed": 1337, "opt": "adamw", "tie": false, "depth_share": 1, "dim": 256, "layers": 4, "heads": 4, "effective_depth": 4, "seq": 256, "batch": 12, "steps": 400, "tokens_seen": 1228800, "wall_seconds": 426.39, "seconds_per_step": 1.066, "train_tail_loss": 4.2076, "n_params": 3737872, "lr": 0.003, "muon_lr": null, "val_loss": 4.2082, "val_bpb": 2.485302, "tokens_per_byte": 0.40936, "eval_tokens": 294912, "artifact_bytes_zlib_int8": 3522756, "artifact_bytes_raw": 3784401, "artifact_under_16mb": true, "int8_val_loss": 4.2083, "int8_val_bpb": 2.485362, "quant_bpb_delta": 6e-05, "anchor_bpb_uniform": 4.093601, "anchor_tokens_per_byte": 0.40936, "threads": 4, "torch": "2.14.1+cpu", "device": "cpu"}
