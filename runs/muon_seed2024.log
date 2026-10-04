@@ -1,0 +1,28 @@
+[14:51:08] TASK tag=muon seed=2024 opt=muon depth_share=1 tie=0
+[14:51:08] tokenizer=C:\Users\35586\AppData\Local\Temp\c2g_6c4711c0_fineweb_1024_bpe.model
+[14:51:08] data train_shard=fineweb_train_000000.bin val_tokens_available=62021633 val_eval_tokens=294913
+[14:51:08] anchor uniform_over_vocab bpb=4.093601 tokens_per_byte=0.409360 tokens=294912
+[14:51:08] model params=3737872 effective_depth=4
+[14:51:09] optimizers=['muon', 'adamw_scalars'] lr=0.003 muon_lr=0.02
+[14:51:11] step 0 loss 6.9902 lr 7.500e-05 elapsed 0.0s tok 3072
+[14:51:12] step 1 loss 6.8081 lr 1.500e-04 elapsed 1.3s tok 6144
+[14:51:41] step 25 loss 5.5208 lr 1.950e-03 elapsed 30.9s tok 79872
+[14:52:13] step 50 loss 5.0937 lr 2.995e-03 elapsed 62.0s tok 156672
+[14:52:46] step 75 loss 4.6569 lr 2.938e-03 elapsed 95.1s tok 233472
+[14:53:38] step 100 loss 4.4901 lr 2.819e-03 elapsed 147.4s tok 310272
+[14:54:10] step 125 loss 4.6977 lr 2.645e-03 elapsed 179.1s tok 387072
+[14:54:42] step 150 loss 4.5682 lr 2.424e-03 elapsed 211.3s tok 463872
+[14:55:14] step 175 loss 4.6188 lr 2.167e-03 elapsed 243.8s tok 540672
+[14:55:48] step 200 loss 4.3337 lr 1.884e-03 elapsed 277.0s tok 617472
+[14:56:22] step 225 loss 4.3276 lr 1.591e-03 elapsed 311.7s tok 694272
+[14:56:57] step 250 loss 4.2618 lr 1.301e-03 elapsed 346.4s tok 771072
+[14:57:32] step 275 loss 4.4866 lr 1.027e-03 elapsed 381.4s tok 847872
+[14:58:08] step 300 loss 4.2337 lr 7.822e-04 elapsed 417.5s tok 924672
+[14:58:44] step 325 loss 4.2756 lr 5.790e-04 elapsed 453.7s tok 1001472
+[14:59:21] step 350 loss 4.1820 lr 4.265e-04 elapsed 490.3s tok 1078272
+[14:59:55] step 375 loss 4.0470 lr 3.320e-04 elapsed 524.2s tok 1155072
+[15:00:30] train done steps=400 tokens=1228800 wall=560.7s s/step=1.402 tail_loss=4.1977
+[15:01:07] final val_loss=4.2152 val_bpb=2.4894 tokens_per_byte=0.409360 eval_tokens=294912
+[15:01:07] int8+zlib artifact bytes=3499447 raw=3784401 file=muon_seed2024.int8.pt under_16MB=True
+[15:01:44] final_int8_zlib_roundtrip val_loss=4.2153 val_bpb=2.4895
+[15:01:44] RESULT {"tag": "muon", "seed": 2024, "opt": "muon", "tie": false, "depth_share": 1, "dim": 256, "layers": 4, "heads": 4, "effective_depth": 4, "seq": 256, "batch": 12, "steps": 400, "tokens_seen": 1228800, "wall_seconds": 560.65, "seconds_per_step": 1.4016, "train_tail_loss": 4.1977, "n_params": 3737872, "lr": 0.003, "muon_lr": 0.02, "val_loss": 4.2152, "val_bpb": 2.489402, "tokens_per_byte": 0.40936, "eval_tokens": 294912, "artifact_bytes_zlib_int8": 3499447, "artifact_bytes_raw": 3784401, "artifact_under_16mb": true, "int8_val_loss": 4.2153, "int8_val_bpb": 2.48947, "quant_bpb_delta": 6.8e-05, "anchor_bpb_uniform": 4.093601, "anchor_tokens_per_byte": 0.40936, "threads": 4, "torch": "2.14.1+cpu", "device": "cpu"}
