@@ -1,0 +1,15 @@
+[14:49:46] TASK tag=probe seed=1337 opt=adamw depth_share=1 tie=0
+[14:49:46] tokenizer=C:\Users\35586\AppData\Local\Temp\c2g_6c4711c0_fineweb_1024_bpe.model
+[14:49:46] data train_shard=fineweb_train_000000.bin val_tokens_available=62021633 val_eval_tokens=12289
+[14:49:46] anchor uniform_over_vocab bpb=4.075622 tokens_per_byte=0.407562 tokens=12288
+[14:49:46] model params=3737872 effective_depth=4
+[14:49:47] optimizers=['adamw'] lr=0.003 muon_lr=0.02
+[14:49:49] step 0 loss 6.9797 lr 7.500e-05 elapsed 0.0s tok 3072
+[14:49:51] step 1 loss 6.9362 lr 1.500e-04 elapsed 1.5s tok 6144
+[14:50:17] step 25 loss 6.0198 lr 1.950e-03 elapsed 29.3s tok 79872
+[14:50:29] step 50 loss 5.6688 lr 1.650e-03 elapsed 40.8s tok 156672
+[14:50:34] train done steps=60 tokens=184320 wall=46.2s s/step=0.769 tail_loss=5.5335
+[14:50:34] final val_loss=5.4128 val_bpb=3.1827 tokens_per_byte=0.407562 eval_tokens=12288
+[14:50:34] int8+zlib artifact bytes=3532793 raw=3784401 file=probe_seed1337.int8.pt under_16MB=True
+[14:50:35] final_int8_zlib_roundtrip val_loss=5.4129 val_bpb=3.1827
+[14:50:35] RESULT {"tag": "probe", "seed": 1337, "opt": "adamw", "tie": false, "depth_share": 1, "dim": 256, "layers": 4, "heads": 4, "effective_depth": 4, "seq": 256, "batch": 12, "steps": 60, "tokens_seen": 184320, "wall_seconds": 46.15, "seconds_per_step": 0.7692, "train_tail_loss": 5.5335, "n_params": 3737872, "lr": 0.003, "muon_lr": null, "val_loss": 5.4128, "val_bpb": 3.182671, "tokens_per_byte": 0.407562, "eval_tokens": 12288, "artifact_bytes_zlib_int8": 3532793, "artifact_bytes_raw": 3784401, "artifact_under_16mb": true, "int8_val_loss": 5.4129, "int8_val_bpb": 3.182719, "quant_bpb_delta": 4.8e-05, "anchor_bpb_uniform": 4.075622, "anchor_tokens_per_byte": 0.407562, "threads": 8, "torch": "2.14.1+cpu", "device": "cpu"}
